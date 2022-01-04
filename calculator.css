@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  width: 70px;
+}
+
+#buttons {
+  display: flex;
+}
+
+#numberBtns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+}
+
+#operationBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+#zero {
+  width: 140px;
+}
