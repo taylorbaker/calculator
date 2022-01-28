@@ -88,7 +88,9 @@ point.addEventListener('click', () => {
 
 // Operation implementation functions
 function add(a, b) {
-  return a + b;
+  let A = parseFloat(a, 10);
+  let B = parseFloat(b, 10);
+  return A + B;
 }
 
 function subtract(a, b) {
@@ -114,8 +116,16 @@ function mod(a, b) {
 // display helper function
 function updateDisplay() {
   main.innerText = primaryText;
-  reg.innerText = regText; 
+  reg.innerText = regText;
 } 
+
+// truncate input str to num length
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str;
+  }
+  return str.slice(0, num);
+}
 
 function funnyDivZeroThing() {
   console.log('Boom!');
